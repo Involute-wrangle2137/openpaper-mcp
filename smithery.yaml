@@ -1,3 +1,5 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
 startCommand:
   type: stdio
   configSchema:
@@ -7,17 +9,12 @@ startCommand:
     properties:
       apiToken:
         type: string
-        description: "Your OpenPaper Bearer token. Get it from openpaper.dev: open DevTools → Network → any API request → Authorization header (part after 'Bearer ')"
-      apiUrl:
-        type: string
-        description: "OpenPaper API URL (default: https://api.openpaper.dev)"
-        default: "https://api.openpaper.dev"
+        description: "Your OpenPaper API token from openpaper.dev"
   commandFunction: |-
     (config) => ({
-      command: "python",
-      args: ["server.py"],
+      command: "uvx",
+      args: ["openpaper-mcp"],
       env: {
-        OPENPAPER_API_TOKEN: config.apiToken,
-        OPENPAPER_API_URL: config.apiUrl || "https://api.openpaper.dev"
+        OPENPAPER_API_TOKEN: config.apiToken
       }
     })
