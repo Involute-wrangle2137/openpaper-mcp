@@ -16,9 +16,10 @@ jobs:
 
       - name: Install mcp-publisher
         run: |
-          curl -fsSL https://registry.modelcontextprotocol.io/install.sh | sh
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-          ls -la "$HOME/.local/bin/" || true
+          curl -fsSL -o /tmp/mcp-publisher.tar.gz \
+            https://github.com/modelcontextprotocol/registry/releases/download/v1.5.0/mcp-publisher_linux_amd64.tar.gz
+          tar -xzf /tmp/mcp-publisher.tar.gz -C /usr/local/bin mcp-publisher
+          chmod +x /usr/local/bin/mcp-publisher
 
       - name: Login to MCP Registry
         run: mcp-publisher login github-oidc
